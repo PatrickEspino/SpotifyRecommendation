@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title> Recommend </title>
+    </head>
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+
+        <h2> Recommendations </h2>
+        <form action="/recommend" method="POST">
+            <p>Spotify Playlist URL <input type="url" name = "URL_name"/></p>
+            <p>Spotify Playlist Name <input type="text" name = "playlist_name"/></p>
+            <p><input type="submit" value="submit"></p>
+        </form>
+
+        {% for table in tables %}
+                {{titles[loop.index]}}
+                {{ table|safe  }}
+        {% endfor %}
+
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title> Results </title>
+    </head>
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+        <h2> Results </h2>
+        <p>Here are your recommended songs</p>
+        {% for table in tables %}
+                {{ table|safe  }}
+        {% endfor %}
+    {% endblock %}
+    </body>
+</html>
