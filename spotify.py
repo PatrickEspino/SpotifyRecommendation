@@ -15,7 +15,7 @@ import logging
 
 
 CLIENT_ID = "your_client_id_here"
-CLIENT_SECRET = 'your_secret_here
+CLIENT_SECRET = "your_secret_here"
 
 
 def create_spotify_oauth():
