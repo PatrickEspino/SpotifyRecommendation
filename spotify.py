@@ -14,22 +14,8 @@ import requests
 import logging
 
 
-CLIENT_ID = "f062cf3dbb9c4d6e8db6e4ea799acfc6"
-CLIENT_SECRET = "f5483b9d109849fab60670fa92e735c2"
-# username = "drd2g9ijaiu8uvxykcxyi3pam"
-
-# #Set scope, uri, and credentials manager
-# scope = "playlist-modify-public playlist-modify-private playlist-read-private playlist-read-collaborative"
-# redirect_uri = "http://localhost:5000/callback/"
-# client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
-
-# #Authenticate user
-# sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-# token = util.prompt_for_user_token(username, scope, CLIENT_ID, CLIENT_SECRET, redirect_uri)
-# if token:
-#     sp = spotipy.Spotify(auth=token)
-# else:
-#     print("Can't get token for ", username)
+CLIENT_ID = "your_client_id_here"
+CLIENT_SECRET = 'your_secret_here
 
 
 def create_spotify_oauth():
